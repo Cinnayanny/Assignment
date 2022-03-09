@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="mainSite.css">
     <script>
         function authentication(form) {
-            alert("Complete Javascript, and disable this alert.");
+            if (form.uname.value == 'admin' && form.pwd.value == 'admin'){
+                document.getElementById("outputStatus").innerHTML = "<p style = 'color:green'> Success";}
+            else{
+                document.getElementById("outputStatus").innerHTML = "<p style = 'color:red'> Failed";
+            }
+
+            //alert("Complete Javascript, and disable this alert.");
         }
     </script>
 </head>
